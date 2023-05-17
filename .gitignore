@@ -49,4 +49,4 @@ translations/*
 !translations/english/
 
 translations/english/*
-#!translations/english/WEB
+!translations/english/WEB
