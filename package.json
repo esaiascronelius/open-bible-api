@@ -1,0 +1,23 @@
+{
+  "name": "open-bible-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/main.ts",
+  "scripts": {
+    "watch": "tsc --watch",
+    "dev": "nodemon ./dist/main.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "authors": [
+    "Esaias Cronelius <esaias@cronelius.se>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.1.7",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
