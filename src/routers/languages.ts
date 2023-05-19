@@ -3,6 +3,7 @@ import getBooks from '../routes/languages/getBooks.js'
 import getChapters from '../routes/languages/getChapters.js'
 import getLanguages from '../routes/languages/getLanguages.js'
 import getTranslations from '../routes/languages/getTranslations.js'
+import getVerseRange from '../routes/languages/getVerseRange.js'
 import getVerses from '../routes/languages/getVerses.js'
 
 // Create a new router.
@@ -22,5 +23,8 @@ languagesRotuer.get('/:language/translations/:translation/books/:book/chapters',
 
 // Get number of verses in a chapter.
 languagesRotuer.get('/:language/translations/:translation/books/:book/chapters/:chapter/verses', getVerses)
+
+// Get a range of verses in a chapter.
+languagesRotuer.get('/:language/translations/:translation/books/:book/chapters/:chapter/verses/:start-:end', getVerseRange)
 
 export default languagesRotuer
