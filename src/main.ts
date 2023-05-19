@@ -1,3 +1,5 @@
 import { loadTranslations } from './services/bible.js'
+import { createApp, startApp } from './services/http.js'
 
-loadTranslations()
+await loadTranslations()
+startApp(createApp())
