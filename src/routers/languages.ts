@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import getBooks from '../routes/languages/getBooks.js'
+import getChapters from '../routes/languages/getChapters.js'
 import getLanguages from '../routes/languages/getLanguages.js'
 import getTranslations from '../routes/languages/getTranslations.js'
 
@@ -14,5 +15,8 @@ languagesRotuer.get('/:language/translations', getTranslations)
 
 // Get all books in a translation.
 languagesRotuer.get('/:language/translations/:translation/books', getBooks)
+
+// Get number of chapters in a book.
+languagesRotuer.get('/:language/translations/:translation/books/:book/chapters', getChapters)
 
 export default languagesRotuer
