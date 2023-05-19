@@ -162,6 +162,18 @@ The REST API is used to query the database and get the text of the bible.
 }
 ```
 
+## Get number of verses in a chapter
+
+`GET /api/languages/{language}/translations/{translation}/books/{book}/chapters/{chapter}/verses`
+
+### Response
+
+```json
+{
+  "count": 31
+}
+```
+
 ## Get a range of verses in a chapter
 
 `GET /api/languages/{language}/translations/{translation}/books/{book}/chapters/{chapter}/verses?from={from}&to={to}`
