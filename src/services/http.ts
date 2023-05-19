@@ -1,5 +1,6 @@
 import express, { Express } from 'express'
 import useHelmet from '../libs/useHelmet.js'
+import languagesRotuer from '../routers/languages.js'
 
 /**
  * Create a new instance of the express app
@@ -30,6 +31,9 @@ const addMiddleware = (app: Express): void => {
  * @param {Express} app The express app.
  */
 const addRouters = (app: Express): void => {
+  // Add languages router.
+  app.use('/api/languages', languagesRotuer)
+
   // 404 Error Page
   app.use((_, res) => res.status(404).send('404 Not Found'))
 }

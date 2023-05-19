@@ -17,3 +17,5 @@ export const loadTranslations = async (): Promise<typeof bibleLanguages> => {
 
   return bibleLanguages
 }
+
+export default bibleLanguages
