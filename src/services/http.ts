@@ -1,4 +1,5 @@
 import express, { Express } from 'express'
+import useHelmet from '../libs/useHelmet.js'
 
 /**
  * Create a new instance of the express app
@@ -20,6 +21,7 @@ export const createApp = (): Express => {
  */
 const addMiddleware = (app: Express): void => {
   app.use(express.json())
+  useHelmet(app)
 }
 
 /**
